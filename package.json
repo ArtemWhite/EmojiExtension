@@ -1,0 +1,32 @@
+{
+    "name": "emoji-inserter",
+    "displayName": "Emoji Inserter",
+    "description": "An extension to insert emojis.",
+    "version": "0.0.1",
+    "publisher": "your-name",
+    "engines": {
+        "vscode": "^1.30.0" 
+    },
+    "activationEvents": [
+        "onCommand:emodi-inserter.inserterEmoji"
+    ],
+    "main": "./out/extension.js",
+    "contributes": {
+        "commands": [
+            {
+                "command": "emodi-inserter.inserterEmoji",
+                "title": "Вставить смайлик"
+            }
+        ]
+    },
+    "scripts": {
+        "compile": "tsc -p ./",
+        "watch": "tsc -watch -p ./",
+        "pretest": "npm run compile"
+    },
+    "devDependencies": {
+        "typescript": "^4.0.0",
+        "@types/node": "^14.0.0",
+        "vscode": "^1.30.0"
+    }
+}
